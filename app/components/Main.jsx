@@ -12,7 +12,7 @@ var Main = (props) => {
 			<Nav/>
 			<div className="row">
 				<div className="columns medium-6 large-4 small-centered">
-					<h2> Weather App </h2>
+					
 
 					{props.children}
 				</div>
