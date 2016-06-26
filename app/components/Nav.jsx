@@ -4,21 +4,67 @@ var {Link, IndexLink} = require("react-router");
 
 
 
-var Nav = () => {
+var Nav = React.createClass({
 
 
-		return (
-			<div>	
-				<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: "bolder"}}> Get Weather </IndexLink>
-				<Link to="/about" activeClassName="active" activeStyle={{fontWeight: "bolder"}}> About </Link>
-				<Link to="/examples" activeClassName="active" activeStyle={{fontWeight: "bolder"}}> Examples </Link>
+onSearch: function(e){
+
+	e.prevent.default();
+	alert("Not yet wired up");
+
+},
+
+
+
+render: function(){
+
+
+return (
+			
+			<div className="top-bar">	
+
+				<div className="top-bar-left">
+					<ul className="menu">
+						<li className="menu-text"> OpenWeatherApp </li>
+
+						<li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: "bolder"}}> Get Weather </IndexLink> </li>
+
+						<li> <Link to="/about" activeClassName="active" activeStyle={{fontWeight: "bolder"}}> About </Link></li>
+
+						<li> <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: "bolder"}}> Examples </Link></li>
+					</ul>
+
+				</div>
+
+				<div className="top-bar-right">
+
+					<form onSubmit={this.onSearch}>
+						<ul className="menu">
+
+							<li> 
+								<input type="search" placeholder="Search weather"/>
+
+							    </li>
+							<li>    
+								<input type="submit" className="button" value="Get Weather!"/>
+								
+							 </li>
+
+						</ul>
+					</form>
+
+
+				</div>
 
 			</div>
+
 			);
+	}
 
-
-
-
-};
+});
 
 module.exports = Nav;
+
+
+
+
