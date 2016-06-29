@@ -1,7 +1,7 @@
 var React = require("react");
 
 
-var About = (props) => {
+var About = () => {
 
 	return (
 
