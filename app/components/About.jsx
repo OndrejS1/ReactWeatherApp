@@ -6,8 +6,8 @@ var About = () => {
 	return (
 
 		<div>
-			<h1 className="text-center"> About </h1>
-			<p> Simple Weather app made for practice porpuses using 3rd party API from OpenWeather.org. </p>
+			<h1 className="text-center page-tittle"> About </h1>
+			<p> Simple Weather app made for practice purposes using 3rd party API from OpenWeather.org. </p>
 			<p> This is Weather App devoloped by Ondřej Svojše </p>
 			<ol>
 				<li>

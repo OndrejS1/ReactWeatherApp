@@ -8,7 +8,7 @@ var Examples = (props) => {
 return (
 
 		<div>
-			<h1> Examples component </h1>
+			<h1 className="text-center page-tittle"> Examples</h1>
 			<p> This are examples of Work of this app </p>
 			<ol>
 				<li> 
