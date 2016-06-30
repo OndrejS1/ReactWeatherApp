@@ -1,4 +1,4 @@
-var React = require("react");
+﻿var React = require("react");
 var ReactDOM = require("react-dom");
 var ReactDOMServer = require("react-dom/server");
 
@@ -38,7 +38,7 @@ var ErrorModal = React.createClass({
 			</div>;
 
 		var $modal = $(ReactDOMServer.renderToString(modalMarkUp));	
-		$(ReactDOM.findDOMNode(this)).httml($modal);
+		$(ReactDOM.findDOMNode(this)).html($modal);
 
 		var modal = new Foundation.Reveal($("#error-modal"));
 		modal.open();
